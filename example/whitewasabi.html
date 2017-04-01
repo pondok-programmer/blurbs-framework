@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>White Wasabi</title>
+	<link rel="stylesheet" href="./blurbs.css">
+</head>
+<body>
+	<div class="bb fixed top menu">
+			<ul class="menu-list">
+				<li class="logo"><a title="">White Wasabi</a></li>
+				<li class="active"><a href="#">HOME</a> </li>
+				<li class="dropdown">
+					<a href="#" couple-id="kelinci">CATEGORIES <i class="dropdown icon"></i></a>
+					<ul class="dropdown-content" couple-data="kelinci">
+						<li><a href="#">Sport</a></li>
+						<li><a href="#">Old</a></li>
+						<li><a href="#">New</a></li>
+						<li><a href="#">Sport</a></li>
+						<li><a href="#">Old</a></li>
+						<li><a href="#">New</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+						<a href="#" couple-id="kambing">DEALERS <i class="dropdown icon"></i>
+						</a>
+						<ul class="dropdown-content" couple-data="kambing">
+							<li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="3">3</a></li>
+						</ul>
+				</li>
+				<li class="float right">
+					<div class="bb mini icon input">
+					  <input placeholder="Search..." type="text">
+					  <i class="search icon"></i>
+					</div>
+					<a class="bb basic green tiny btn">Sign Up</a>
+					<a class="bb basic blue tiny btn">Login</a>
+				</li>
+			</ul>
+	</div>
+
+	<script src="./jquery.js"></script>
+	<script src="./blurbs.js"></script>
+	<script type="text/javascript">
+    $('[couple-id="kelinci"]').blurbs_couple({
+      	acton : "hover",
+      	identity : "kelinci"
+    });
+    $('[couple-id="kambing"]').blurbs_couple({
+      	acton : "hover",
+      	identity : "kambing"
+    });
+	</script>
+</body>
+</html>
