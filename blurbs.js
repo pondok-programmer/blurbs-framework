@@ -197,11 +197,11 @@ $.fn.blurbs_background = function ( option ) {
               , pid       = src.replace(/!/i,'')
               , srcw      = $("input[homba-id='"+pid+"']");
               
-                if(src.search('!') == 0 && !srcw.val() || src.search('!') < 0 && srcw.val()) //mau tampil pas kosong
+                if(src.search('!') == 0 && !srcw.val() || src.search('!') < 0 && srcw.val()) // i you empty, i want show up
               {
                 $(srcs).css({"display": "block"});
               }
-                else if(src.search('!') == 0 && srcw.val() || src.search('!') < 0 && !srcw.val()) //mau tampil pas kosong tapi ke  isi
+                else if(src.search('!') == 0 && srcw.val() || src.search('!') < 0 && !srcw.val()) // i want show up is this sel is empty
               {
                 $(srcs).css({"display": "none"});
               }
@@ -217,11 +217,11 @@ $.fn.blurbs_background = function ( option ) {
               , pid       = src.replace(/!/i,'')
               , srcw      = $("input[homba-id='"+pid+"']");
               
-                if(src.search('!') == 0 && !srcw.val() || src.search('!') < 0 && srcw.val()) //mau tampil pas kosong
+                if(src.search('!') == 0 && !srcw.val() || src.search('!') < 0 && srcw.val()) // if you empty, i want show up
               {
                 $(srcs).css({"display": "block"});
               }
-                else if(src.search('!') == 0 && srcw.val() || src.search('!') < 0 && !srcw.val()) //mau tampil pas kosong tapi ke  isi
+                else if(src.search('!') == 0 && srcw.val() || src.search('!') < 0 && !srcw.val()) // i want show up if this sel is empty
               {
                 $(srcs).css({"display": "none"});
               }
@@ -268,6 +268,7 @@ $.fn.blurbs_hotahomba = function ( option ) {
 *  Writer : Rubi Jihantoro
 *
 *  #Date
+*  BAD LOGIN / use your brain / use your math skill
 ******************************************************/
 
 !function () {
@@ -415,3 +416,4 @@ function blurbs_readable_time(sd,lg,lm,lh,ly,ld)
         }
 }
 
+// Blurbs Framework v.1 beta, .js
